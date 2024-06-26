@@ -1,5 +1,6 @@
 import React from 'react'
 import './login.css'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -16,7 +17,7 @@ export default function Login() {
     <input type="text" className="email text-box" placeholder='me@mail.com' required/> <br />
     <input type="password" className=' text-box password' placeholder='password' required/> 
     <span><input type="checkbox" name="" id="" /> Remember info?</span>
-    <button className='forgot'>Forgot Password?</button>
+  <Link to='/forgot' className='forgot'>   Forgot Password? </Link>
     <button className='enter-btn'>Enter</button>
     </div>
     
